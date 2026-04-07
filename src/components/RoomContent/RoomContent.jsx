@@ -293,7 +293,7 @@ const RoomContent = () => {
     if (!roomId || !username) return;
 
     const client = new Client({
-      brokerURL: "ws://localhost:8080/ws", // 🔥 NO SockJS
+      brokerURL: "ws://https://codeforge-backend-rnm1.onrender.com",
       reconnectDelay: 5000,
       debug: (str) => console.log(str),
     });
