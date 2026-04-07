@@ -293,7 +293,7 @@ const RoomContent = () => {
     if (!roomId || !username) return;
 
     const client = new Client({
-      brokerURL: "wss://codeforge-backend-rnm1.onrender.com",
+      brokerURL: "wss://codeforge-backend-rnm1.onrender.com/wss",
       reconnectDelay: 5000,
       debug: (str) => console.log(str),
     });
